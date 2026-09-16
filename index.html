@@ -1,0 +1,2497 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Car | Car Rental in Aziz Nagar, Karachi</title>
+    <meta name="description" content="Explore car rental categories and send a vehicle rental inquiry to Rent a Car in Sector 11 B, Aziz Nagar, Karachi, Pakistan.">
+    <meta name="keywords" content="Rent a Car, car rental Karachi, vehicle booking inquiry, Sector 11 B Aziz Nagar, car hire Pakistan">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Rent a Car | Car Rental in Aziz Nagar, Karachi">
+    <meta property="og:description" content="Explore car rental categories and send a vehicle rental inquiry to Rent a Car in Sector 11 B, Aziz Nagar, Karachi, Pakistan.">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon (Inline Automotive SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚗</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #0b0f19;
+            --primary-light: #161e2e;
+            --accent: #f59e0b;
+            --accent-glow: rgba(245, 158, 11, 0.25);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --bg-dark: #05070c;
+            --bg-card: rgba(22, 30, 46, 0.75);
+            --border-color: rgba(148, 163, 184, 0.12);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --max-width: 1200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: -0.02em;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(5, 7, 12, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .navbar.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(5, 7, 12, 0.95);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            letter-spacing: -0.01em;
+        }
+
+        .logo i {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.925rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .nav-cta {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.6rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent), #d97706);
+            color: #0b0f19;
+            box-shadow: 0 4px 20px var(--accent-glow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(245, 158, 11, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: #ffffff;
+        }
+
+        .btn-whatsapp:hover {
+            background: #20ba5a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: var(--text-main);
+            font-size: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding-top: 80px;
+            overflow: hidden;
+            background: radial-gradient(circle at 50% 40%, #111827 0%, var(--bg-dark) 75%);
+        }
+
+        .hero-bg-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(5,7,12,0.9), rgba(5,7,12,0.6)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            z-index: 1;
+            opacity: 0.4;
+        }
+
+        .hero-content-wrapper {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 3rem;
+            align-items: center;
+            padding: 4rem 0;
+        }
+
+        .location-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(245, 158, 11, 0.1);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: 50px;
+            font-size: 0.875rem;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 4.5vw, 4rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 1.5vw, 1.15rem);
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-quick-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 20px;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        .hero-quick-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+        }
+
+        .quick-form-group {
+            margin-bottom: 1rem;
+        }
+
+        .quick-form-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 0.35rem;
+            color: var(--text-muted);
+        }
+
+        .quick-form-group select,
+        .quick-form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgba(5, 7, 12, 0.8);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.9rem;
+        }
+
+        .quick-form-group select:focus,
+        .quick-form-group input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 6rem 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .section-tag {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            display: block;
+        }
+
+        .section-header h2 {
+            font-size: clamp(2rem, 3.5vw, 2.75rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* Vehicle Explorer Section */
+        .explorer-controls {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 3rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) auto;
+            gap: 1.25rem;
+            align-items: end;
+        }
+
+        .filter-group label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            margin-bottom: 0.4rem;
+        }
+
+        .filter-group select,
+        .filter-group input {
+            width: 100%;
+            padding: 0.75rem;
+            background: rgba(5, 7, 12, 0.7);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-main);
+            font-size: 0.9rem;
+            font-family: inherit;
+        }
+
+        .filter-group select:focus,
+        .filter-group input:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .vehicle-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .vehicle-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .vehicle-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+        }
+
+        .vehicle-img-wrapper {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .vehicle-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .vehicle-card:hover .vehicle-img-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .vehicle-badge-label {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(5, 7, 12, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+
+        .vehicle-body {
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .vehicle-body h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .vehicle-meta {
+            display: flex;
+            gap: 1rem;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .vehicle-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+
+        .vehicle-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.75rem;
+        }
+
+        .vehicle-tag {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .vehicle-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: auto;
+        }
+
+        /* Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(5, 7, 12, 0.85);
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            padding: 1.5rem;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-container {
+            background: var(--primary-light);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            max-width: 700px;
+            width: 100%;
+            overflow: hidden;
+            transform: scale(0.95);
+            transition: var(--transition);
+        }
+
+        .modal-overlay.active .modal-container {
+            transform: scale(1);
+        }
+
+        .modal-header {
+            position: relative;
+            height: 280px;
+        }
+
+        .modal-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(5, 7, 12, 0.8);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+        }
+
+        .modal-close:hover {
+            background: var(--accent);
+            color: var(--bg-dark);
+        }
+
+        .modal-body {
+            padding: 2rem;
+        }
+
+        .modal-body h3 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .modal-body p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .modal-features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .modal-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .modal-feature-item i {
+            color: var(--accent);
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        /* Rental Planner Section */
+        .planner-section {
+            background: linear-gradient(to bottom, var(--bg-dark), #0b0f19);
+        }
+
+        .planner-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 3rem;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        .planner-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .planner-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .planner-group.full-width {
+            grid-column: span 2;
+        }
+
+        .planner-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .planner-group input,
+        .planner-group select {
+            width: 100%;
+            padding: 0.85rem 1rem;
+            background: rgba(5, 7, 12, 0.7);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.95rem;
+        }
+
+        .planner-group input:focus,
+        .planner-group select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .planner-result {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: rgba(5, 7, 12, 0.6);
+            border: 1px dashed var(--border-color);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .planner-result p {
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+            font-size: 0.95rem;
+        }
+
+        .planner-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        /* Car Category Selector */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.75rem;
+        }
+
+        .category-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 2.25rem;
+            text-align: center;
+            transition: var(--transition);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .category-card:hover,
+        .category-card.active {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            background: linear-gradient(to bottom, var(--bg-card), rgba(245, 158, 11, 0.05));
+        }
+
+        .category-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(245, 158, 11, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            color: var(--accent);
+            font-size: 1.75rem;
+        }
+
+        .category-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .category-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Rental Use Cases */
+        .usecase-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .usecase-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .usecase-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .usecase-img {
+            height: 180px;
+            position: relative;
+        }
+
+        .usecase-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .usecase-body {
+            padding: 1.75rem;
+        }
+
+        .usecase-body h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .usecase-body p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* How It Works & Preparation Guide */
+        .grid-2-col {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .step-num {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--accent);
+            background: rgba(245, 158, 11, 0.1);
+            padding: 0.5rem 0.8rem;
+            border-radius: 8px;
+            border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+
+        .step-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .step-content p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        .prep-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .prep-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 1.25rem 1.5rem;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .prep-item:hover {
+            border-color: var(--accent);
+            transform: translateX(5px);
+        }
+
+        .prep-item h4 {
+            font-size: 1.05rem;
+            margin-bottom: 0.25rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .prep-item h4 i {
+            color: var(--accent);
+        }
+
+        .prep-item p {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin-bottom: 0;
+        }
+
+        /* Rental Checklist Interactive Box */
+        .checklist-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 3rem;
+        }
+
+        .checklist-progress-bar {
+            background: rgba(5, 7, 12, 0.8);
+            border-radius: 50px;
+            height: 10px;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .checklist-progress-fill {
+            height: 100%;
+            background: var(--accent);
+            width: 0%;
+            transition: width 0.4s ease;
+        }
+
+        .checklist-items {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .checklist-label {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(5, 7, 12, 0.5);
+            padding: 1rem 1.25rem;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .checklist-label:hover {
+            border-color: var(--accent);
+        }
+
+        .checklist-label input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--accent);
+            cursor: pointer;
+        }
+
+        .checklist-label span {
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* About & Benefits Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-image-box {
+            position: relative;
+            height: 400px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+        }
+
+        .about-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 1.75rem;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .benefit-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-4px);
+        }
+
+        .benefit-card i {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+
+        /* FAQ Accordion */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-item.active {
+            border-color: var(--accent);
+        }
+
+        .faq-question {
+            padding: 1.25rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .faq-question i {
+            color: var(--accent);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 250px;
+            padding-bottom: 1.25rem;
+        }
+
+        /* Contact Section — ZERO IMAGES */
+        .contact-section {
+            background: linear-gradient(to top, var(--bg-dark), #0b0f19);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-info-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(245, 158, 11, 0.1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent);
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .contact-info-content h4 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-info-content p, 
+        .contact-info-content a {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+            transition: var(--transition);
+        }
+
+        .contact-info-content a:hover {
+            color: var(--accent);
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2.5rem;
+        }
+
+        .contact-form-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 2.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+            color: var(--text-main);
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            background: rgba(5, 7, 12, 0.7);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--accent-glow);
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-feedback {
+            margin-top: 1.25rem;
+            padding: 1rem;
+            border-radius: 8px;
+            display: none;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .form-feedback.success {
+            display: block;
+            background: rgba(37, 211, 102, 0.15);
+            border: 1px solid rgba(37, 211, 102, 0.3);
+            color: #25d366;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-dark);
+            border-top: 1px solid var(--border-color);
+            padding: 5rem 0 2rem 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-col h3 {
+            font-size: 1.15rem;
+            margin-bottom: 1.25rem;
+            font-weight: 700;
+        }
+
+        .footer-col p {
+            color: var(--text-muted);
+            font-size: 0.925rem;
+            margin-bottom: 1.5rem;
+            max-width: 320px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 45px;
+            height: 45px;
+            background: var(--primary-light);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--accent);
+            color: var(--bg-dark);
+            border-color: var(--accent);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1200px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-content-wrapper,
+            .about-grid,
+            .grid-2-col,
+            .contact-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .planner-grid {
+                grid-template-columns: 1fr;
+            }
+            .planner-group.full-width {
+                grid-column: span 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .nav-cta {
+                display: none;
+            }
+            .hamburger {
+                display: block;
+            }
+            .mobile-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background: rgba(5, 7, 12, 0.98);
+                backdrop-filter: blur(15px);
+                border-bottom: 1px solid var(--border-color);
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+                transform: translateY(-150%);
+                transition: transform 0.3s ease-in-out;
+                z-index: 999;
+            }
+            .mobile-menu.open {
+                transform: translateY(0);
+            }
+            .mobile-menu a {
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: var(--text-muted);
+            }
+            .mobile-menu a:hover,
+            .mobile-menu a.active {
+                color: var(--accent);
+            }
+            section {
+                padding: 4rem 0;
+            }
+            .explorer-controls {
+                grid-template-columns: 1fr;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+            .contact-actions,
+            .modal-buttons,
+            .planner-actions {
+                flex-direction: column;
+            }
+            .vehicle-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-car-side"></i>
+                RENT A CAR
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#cars">Cars</a>
+                <a href="#options">Rental Options</a>
+                <a href="#process">How It Works</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-cta">
+                <a href="#cars" class="btn btn-secondary">Find a Car</a>
+                <a href="https://wa.me/923213759960" target="_blank" class="btn btn-whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home" class="mobile-link active">Home</a>
+            <a href="#cars" class="mobile-link">Cars</a>
+            <a href="#options" class="mobile-link">Rental Options</a>
+            <a href="#process" class="mobile-link">How It Works</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="https://wa.me/923213759960" target="_blank" class="btn btn-whatsapp" style="width: 100%; justify-content: center; margin-top: 0.5rem;">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-overlay"></div>
+        <div class="container">
+            <div class="hero-content-wrapper">
+                <div>
+                    <div class="location-badge">
+                        <i class="fa-solid fa-location-dot"></i> Sector 11 B, Aziz Nagar, Karachi, Pakistan
+                    </div>
+                    <h1>YOUR NEXT DRIVE STARTS HERE.</h1>
+                    <p>Explore vehicle options and send a rental inquiry directly to Rent a Car in Aziz Nagar, Karachi.</p>
+                    <div class="hero-buttons">
+                        <a href="#cars" class="btn btn-primary">
+                            Explore Cars <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/923213759960?text=Hello,%20I%20would%20like%20to%20make%20a%20rental%20inquiry." target="_blank" class="btn btn-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Rental Inquiry
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Floating Quick Booking Card -->
+                <div class="hero-quick-card">
+                    <h3><i class="fa-solid fa-calendar-days"></i> Quick Inquiry Planner</h3>
+                    <div class="quick-form-group">
+                        <label for="heroVehicleType">Vehicle Category</label>
+                        <select id="heroVehicleType">
+                            <option value="Sedan">Sedan</option>
+                            <option value="SUV">SUV</option>
+                            <option value="Economy">Economy</option>
+                            <option value="Executive">Executive</option>
+                            <option value="Family">Family</option>
+                        </select>
+                    </div>
+                    <div class="quick-form-group">
+                        <label for="heroPickupDate">Pickup Date</label>
+                        <input type="date" id="heroPickupDate">
+                    </div>
+                    <div class="quick-form-group">
+                        <label for="heroReturnDate">Return Date</label>
+                        <input type="date" id="heroReturnDate">
+                    </div>
+                    <button type="button" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;" onclick="submitHeroQuickPlanner()">
+                        Send Inquiry via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle Explorer Section -->
+    <section id="cars">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FLEET PREVIEW</span>
+                <h2>FIND THE RIGHT CAR FOR YOUR TRIP</h2>
+                <p>Browse our vehicle categories and types available for rental inquiries.</p>
+            </div>
+
+            <!-- Interactive Filters -->
+            <div class="explorer-controls">
+                <div class="filter-group">
+                    <label for="searchFilter">Search Vehicle</label>
+                    <input type="text" id="searchFilter" placeholder="Search style or feature...">
+                </div>
+                <div class="filter-group">
+                    <label for="categoryFilter">Vehicle Type</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="Sedan">Sedan</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Economy">Economy</option>
+                        <option value="Executive">Executive</option>
+                        <option value="Hatchback">Hatchback</option>
+                        <option value="Family">Family</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sortFilter">Sort By</label>
+                    <select id="sortFilter">
+                        <option value="default">Featured</option>
+                        <option value="name">Name (A-Z)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <button type="button" class="btn btn-secondary" style="width: 100%;" onclick="resetVehicleFilters()">Reset</button>
+                </div>
+            </div>
+
+            <!-- Vehicle Cards Grid -->
+            <div class="vehicle-grid" id="vehicleGrid">
+                <!-- Vehicle 1 -->
+                <div class="vehicle-card" data-category="Sedan" data-name="Executive Sedan">
+                    <div class="vehicle-img-wrapper">
+                        <span class="vehicle-badge-label">Concept Vehicle</span>
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" alt="Executive Sedan">
+                    </div>
+                    <div class="vehicle-body">
+                        <h3>Executive Sedan</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fa-solid fa-car"></i> Sedan</span>
+                            <span><i class="fa-solid fa-user-group"></i> 5 Seats</span>
+                            <span><i class="fa-solid fa-gear"></i> Automatic</span>
+                        </div>
+                        <div class="vehicle-tags">
+                            <span class="vehicle-tag">Comfortable Ride</span>
+                            <span class="vehicle-tag">AC Included</span>
+                            <span class="vehicle-tag">Daily & Long Distance</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <button type="button" class="btn btn-secondary" style="flex: 1;" onclick="openVehicleModal('Executive Sedan', 'Sedan', '5 Seats / Automatic Transmission / Climate Control', 'https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80')">Request Details</button>
+                            <a href="https://wa.me/923213759960?text=Hello,%20I%20would%20like%20to%20inquire%20about%20renting%20the%20Executive%20Sedan." target="_blank" class="btn btn-whatsapp" style="padding: 0.75rem 1rem;"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicle 2 -->
+                <div class="vehicle-card" data-category="SUV" data-name="Full-Size SUV">
+                    <div class="vehicle-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Full-Size SUV">
+                    </div>
+                    <div class="vehicle-body">
+                        <h3>Full-Size SUV</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fa-solid fa-truck-monster"></i> SUV</span>
+                            <span><i class="fa-solid fa-user-group"></i> 7 Seats</span>
+                            <span><i class="fa-solid fa-gear"></i> Automatic</span>
+                        </div>
+                        <div class="vehicle-tags">
+                            <span class="vehicle-tag">Spacious Interior</span>
+                            <span class="vehicle-tag">All-Terrain</span>
+                            <span class="vehicle-tag">Family Travel</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <button type="button" class="btn btn-secondary" style="flex: 1;" onclick="openVehicleModal('Full-Size SUV', 'SUV', '7 Seats / 4x4 Capability / Premium Luggage Space', 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80')">Request Details</button>
+                            <a href="https://wa.me/923213759960?text=Hello,%20I%20would%20like%20to%20inquire%20about%20renting%20the%20Full-Size%20SUV." target="_blank" class="btn btn-whatsapp" style="padding: 0.75rem 1rem;"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicle 3 -->
+                <div class="vehicle-card" data-category="Economy" data-name="Compact Economy">
+                    <div class="vehicle-img-wrapper">
+                        <span class="vehicle-badge-label">Concept Vehicle</span>
+                        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80" alt="Compact Economy">
+                    </div>
+                    <div class="vehicle-body">
+                        <h3>Compact Economy</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fa-solid fa-car-rear"></i> Economy</span>
+                            <span><i class="fa-solid fa-user-group"></i> 4 Seats</span>
+                            <span><i class="fa-solid fa-gear"></i> Manual / Auto</span>
+                        </div>
+                        <div class="vehicle-tags">
+                            <span class="vehicle-tag">Fuel Efficient</span>
+                            <span class="vehicle-tag">City Driving</span>
+                            <span class="vehicle-tag">Easy Parking</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <button type="button" class="btn btn-secondary" style="flex: 1;" onclick="openVehicleModal('Compact Economy', 'Economy', '4 Seats / Fuel Efficient / City Commuting', 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80')">Request Details</button>
+                            <a href="https://wa.me/923213759960?text=Hello,%20I%20would%20like%20to%20inquire%20about%20renting%20the%20Compact%20Economy." target="_blank" class="btn btn-whatsapp" style="padding: 0.75rem 1rem;"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicle 4 -->
+                <div class="vehicle-card" data-category="Executive" data-name="Luxury Executive">
+                    <div class="vehicle-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80" alt="Luxury Executive">
+                    </div>
+                    <div class="vehicle-body">
+                        <h3>Luxury Executive</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fa-solid fa-gem"></i> Executive</span>
+                            <span><i class="fa-solid fa-user-group"></i> 5 Seats</span>
+                            <span><i class="fa-solid fa-gear"></i> Premium Auto</span>
+                        </div>
+                        <div class="vehicle-tags">
+                            <span class="vehicle-tag">VIP Events</span>
+                            <span class="vehicle-tag">Business Meetings</span>
+                            <span class="vehicle-tag">Top Comfort</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <button type="button" class="btn btn-secondary" style="flex: 1;" onclick="openVehicleModal('Luxury Executive', 'Executive', 'Premium Leather / VIP Travel / Advanced Safety', 'https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=800&q=80')">Request Details</button>
+                            <a href="https://wa.me/923213759960?text=Hello,%20I%20would%20like%20to%20inquire%20about%20renting%20the%20Luxury%20Executive." target="_blank" class="btn btn-whatsapp" style="padding: 0.75rem 1rem;"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicle 5 -->
+                <div class="vehicle-card" data-category="Family" data-name="Spacious Family Van">
+                    <div class="vehicle-img-wrapper">
+                        <span class="vehicle-badge-label">Concept Vehicle</span>
+                        <img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=800&q=80" alt="Spacious Family Van">
+                    </div>
+                    <div class="vehicle-body">
+                        <h3>Spacious Family Van</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fa-solid fa-van-shuttle"></i> Family</span>
+                            <span><i class="fa-solid fa-user-group"></i> 8-9 Seats</span>
+                            <span><i class="fa-solid fa-gear"></i> Automatic</span>
+                        </div>
+                        <div class="vehicle-tags">
+                            <span class="vehicle-tag">Group Trips</span>
+                            <span class="vehicle-tag">Extra Luggage</span>
+                            <span class="vehicle-tag">Maximum Capacity</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <button type="button" class="btn btn-secondary" style="flex: 1;" onclick="openVehicleModal('Spacious Family Van', 'Family', '8-9 Passenger Capacity / Extended Storage / Family Tours', 'https://images.unsplash.com/photo-1559416523-140ddc3d238c?auto=format&fit=crop&w=800&q=80')">Request Details</button>
+                            <a href="https://wa.me/923213759960?text=Hello,%20I%20would%20like%20to%20inquire%20about%20renting%20the%20Spacious%20Family%20Van." target="_blank" class="btn btn-whatsapp" style="padding: 0.75rem 1rem;"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vehicle 6 -->
+                <div class="vehicle-card" data-category="Hatchback" data-name="Urban Hatchback">
+                    <div class="vehicle-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80" alt="Urban Hatchback">
+                    </div>
+                    <div class="vehicle-body">
+                        <h3>Urban Hatchback</h3>
+                        <div class="vehicle-meta">
+                            <span><i class="fa-solid fa-car-side"></i> Hatchback</span>
+                            <span><i class="fa-solid fa-user-group"></i> 5 Seats</span>
+                            <span><i class="fa-solid fa-gear"></i> Easy Drive</span>
+                        </div>
+                        <div class="vehicle-tags">
+                            <span class="vehicle-tag">Agile Steering</span>
+                            <span class="vehicle-tag">Compact</span>
+                            <span class="vehicle-tag">Daily Errands</span>
+                        </div>
+                        <div class="vehicle-actions">
+                            <button type="button" class="btn btn-secondary" style="flex: 1;" onclick="openVehicleModal('Urban Hatchback', 'Hatchback', '5 Seats / Agile Handling / City Exploration', 'https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=800&q=80')">Request Details</button>
+                            <a href="https://wa.me/923213759960?text=Hello,%20I%20would%20like%20to%20inquire%20about%20renting%20the%20Urban%20Hatchback." target="_blank" class="btn btn-whatsapp" style="padding: 0.75rem 1rem;"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vehicle Detail Modal -->
+    <div class="modal-overlay" id="vehicleModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <button type="button" class="modal-close" onclick="closeVehicleModal()"><i class="fa-solid fa-xmark"></i></button>
+                <img id="modalImg" src="" alt="Vehicle Image">
+            </div>
+            <div class="modal-body">
+                <h3 id="modalTitle">Vehicle Title</h3>
+                <p id="modalCategory">Category</p>
+                <div class="modal-features" id="modalFeatures">
+                    <!-- Dynamic features -->
+                </div>
+                <div class="modal-buttons">
+                    <a id="modalWhatsAppBtn" href="#" target="_blank" class="btn btn-whatsapp" style="flex: 1; justify-content: center;">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
+                    </a>
+                    <button type="button" class="btn btn-secondary" onclick="closeVehicleModal()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Car Category Selector Section -->
+    <section id="options" style="background: rgba(11, 15, 25, 0.5);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">VEHICLE CLASSIFICATIONS</span>
+                <h2>WHAT TYPE OF CAR DO YOU NEED?</h2>
+                <p>Explore our general categories to match your travel profile.</p>
+            </div>
+
+            <div class="category-grid">
+                <div class="category-card" onclick="filterByCategory('Economy')">
+                    <div class="category-icon"><i class="fa-solid fa-car-rear"></i></div>
+                    <h3>ECONOMY</h3>
+                    <p>For everyday driving and efficient city travel.</p>
+                    <span class="card-link" style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">Explore Category <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card" onclick="filterByCategory('Sedan')">
+                    <div class="category-icon"><i class="fa-solid fa-car"></i></div>
+                    <h3>SEDAN</h3>
+                    <p>A practical category for comfortable trips and business transit.</p>
+                    <span class="card-link" style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">Explore Category <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card" onclick="filterByCategory('SUV')">
+                    <div class="category-icon"><i class="fa-solid fa-truck-monster"></i></div>
+                    <h3>SUV</h3>
+                    <p>A larger vehicle category for different travel needs and terrain.</p>
+                    <span class="card-link" style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">Explore Category <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card" onclick="filterByCategory('Hatchback')">
+                    <div class="category-icon"><i class="fa-solid fa-car-side"></i></div>
+                    <h3>HATCHBACK</h3>
+                    <p>A compact vehicle category for nimble urban commutes.</p>
+                    <span class="card-link" style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">Explore Category <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card" onclick="filterByCategory('Executive')">
+                    <div class="category-icon"><i class="fa-solid fa-gem"></i></div>
+                    <h3>EXECUTIVE</h3>
+                    <p>A premium-oriented vehicle category for VIP presence.</p>
+                    <span class="card-link" style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">Explore Category <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+
+                <div class="category-card" onclick="filterByCategory('Family')">
+                    <div class="category-icon"><i class="fa-solid fa-van-shuttle"></i></div>
+                    <h3>FAMILY</h3>
+                    <p>A category focused on extended passenger space and comfort.</p>
+                    <span class="card-link" style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">Explore Category <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Planner Section -->
+    <section class="planner-section" id="planner">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">INQUIRY BUILDER TOOL</span>
+                <h2>PLAN YOUR RENTAL</h2>
+                <p>Configure your trip preferences and send an inquiry directly to Rent a Car.</p>
+            </div>
+
+            <div class="planner-wrapper">
+                <form id="rentalPlannerForm">
+                    <div class="planner-grid">
+                        <div class="planner-group">
+                            <label for="planPickupDate">PICKUP DATE</label>
+                            <input type="date" id="planPickupDate" required>
+                        </div>
+                        <div class="planner-group">
+                            <label for="planReturnDate">RETURN DATE</label>
+                            <input type="date" id="planReturnDate" required>
+                        </div>
+                        <div class="planner-group">
+                            <label for="planVehicleType">VEHICLE TYPE</label>
+                            <select id="planVehicleType">
+                                <option value="Economy">Economy</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Hatchback">Hatchback</option>
+                                <option value="Executive">Executive</option>
+                                <option value="Family">Family</option>
+                            </select>
+                        </div>
+                        <div class="planner-group">
+                            <label for="planTripType">TRIP TYPE</label>
+                            <select id="planTripType">
+                                <option value="Daily Use">Daily Use</option>
+                                <option value="Business">Business</option>
+                                <option value="Family">Family</option>
+                                <option value="Travel">Travel</option>
+                                <option value="Event">Event</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="planner-group full-width">
+                            <label for="planDriverReq">DRIVER REQUIREMENT</label>
+                            <select id="planDriverReq">
+                                <option value="Self Drive Inquiry">Self Drive Inquiry</option>
+                                <option value="Driver Requirement">Driver Requirement</option>
+                                <option value="Not Sure">Not Sure</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="planner-result">
+                        <p id="plannerStatusText">Your rental preferences are ready. Send an inquiry to confirm availability and terms.</p>
+                        <div class="planner-actions">
+                            <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                            <a id="plannerWhatsAppBtn" href="https://wa.me/923213759960?text=Hello,%20I%20would%20like%20to%20inquire%20about%20renting%20a%20car." target="_blank" class="btn btn-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp Inquiry
+                            </a>
+                        </div>
+                        <div class="form-feedback" id="plannerFeedback" style="margin-top: 1rem;">
+                            Your rental inquiry has been prepared. Contact the dealership directly to confirm availability and rental terms.
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Use Cases -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">APPLICATIONS</span>
+                <h2>CHOOSE YOUR DRIVE</h2>
+                <p>Vehicles suitable for various occasions and travel requirements.</p>
+            </div>
+
+            <div class="usecase-grid">
+                <div class="usecase-card">
+                    <div class="usecase-img">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=800&q=80" alt="Daily Travel">
+                    </div>
+                    <div class="usecase-body">
+                        <h3>Daily Travel</h3>
+                        <p>Reliable vehicles for routine commuting and city errands.</p>
+                    </div>
+                </div>
+
+                <div class="usecase-card">
+                    <div class="usecase-img">
+                        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=800&q=80" alt="Family Trips">
+                    </div>
+                    <div class="usecase-body">
+                        <h3>Family Trips</h3>
+                        <p>Comfortable SUVs and vans for family outings and vacations.</p>
+                    </div>
+                </div>
+
+                <div class="usecase-card">
+                    <div class="usecase-img">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Business Travel">
+                    </div>
+                    <div class="usecase-body">
+                        <h3>Business Travel</h3>
+                        <p>Executive and sedans for professional meetings and corporate transit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works & Rental Preparation Guide -->
+    <section id="process" style="background: rgba(11, 15, 25, 0.4);">
+        <div class="container">
+            <div class="grid-2-col">
+                <div>
+                    <span class="section-tag">PROCESS</span>
+                    <h2 style="font-size: 2rem; margin-bottom: 2rem;">HOW IT WORKS</h2>
+
+                    <div class="process-steps">
+                        <div class="process-step">
+                            <div class="step-num">01</div>
+                            <div class="step-content">
+                                <h4>CHOOSE</h4>
+                                <p>Select your preferred vehicle category.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-num">02</div>
+                            <div class="step-content">
+                                <h4>PLAN</h4>
+                                <p>Enter your pickup and return preferences.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-num">03</div>
+                            <div class="step-content">
+                                <h4>INQUIRE</h4>
+                                <p>Send your rental requirements.</p>
+                            </div>
+                        </div>
+                        <div class="process-step">
+                            <div class="step-num">04</div>
+                            <div class="step-content">
+                                <h4>CONFIRM</h4>
+                                <p>Discuss availability and rental terms directly with Rent a Car.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="section-tag">GUIDELINES</span>
+                    <h2 style="font-size: 2rem; margin-bottom: 2rem;">RENTAL PREPARATION GUIDE</h2>
+
+                    <div class="prep-cards">
+                        <div class="prep-item">
+                            <h4><i class="fa-solid fa-circle-question"></i> BEFORE RENTING</h4>
+                            <p>Things to ask about vehicle availability and rental terms.</p>
+                        </div>
+                        <div class="prep-item">
+                            <h4><i class="fa-solid fa-car-inspect"></i> VEHICLE CONDITION</h4>
+                            <p>Review the vehicle condition before proceeding.</p>
+                        </div>
+                        <div class="prep-item">
+                            <h4><i class="fa-solid fa-file-lines"></i> DOCUMENTATION</h4>
+                            <p>Ask the rental provider which documents are required.</p>
+                        </div>
+                        <div class="prep-item">
+                            <h4><i class="fa-solid fa-clock-rotate-left"></i> RETURN TERMS</h4>
+                            <p>Confirm return timing and agreed rental conditions.</p>
+                        </div>
+                        <div class="prep-item">
+                            <h4><i class="fa-solid fa-id-card"></i> DRIVER REQUIREMENTS</h4>
+                            <p>Confirm applicable driver requirements directly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Rental Checklist -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">CHECKLIST TOOL</span>
+                <h2>BEFORE YOU DRIVE</h2>
+                <p>Check off items as you prepare your rental inquiry and planning.</p>
+            </div>
+
+            <div class="checklist-container">
+                <div class="checklist-progress-bar">
+                    <div class="checklist-progress-fill" id="checklistProgress"></div>
+                </div>
+                <div class="checklist-items">
+                    <label class="checklist-label">
+                        <input type="checkbox" class="checklist-chk" onchange="updateChecklist()">
+                        <span>Confirm vehicle details</span>
+                    </label>
+                    <label class="checklist-label">
+                        <input type="checkbox" class="checklist-chk" onchange="updateChecklist()">
+                        <span>Confirm pickup date</span>
+                    </label>
+                    <label class="checklist-label">
+                        <input type="checkbox" class="checklist-chk" onchange="updateChecklist()">
+                        <span>Confirm return date</span>
+                    </label>
+                    <label class="checklist-label">
+                        <input type="checkbox" class="checklist-chk" onchange="updateChecklist()">
+                        <span>Confirm rental terms</span>
+                    </label>
+                    <label class="checklist-label">
+                        <input type="checkbox" class="checklist-chk" onchange="updateChecklist()">
+                        <span>Review vehicle condition</span>
+                    </label>
+                    <label class="checklist-label">
+                        <input type="checkbox" class="checklist-chk" onchange="updateChecklist()">
+                        <span>Confirm required documents</span>
+                    </label>
+                    <label class="checklist-label">
+                        <input type="checkbox" class="checklist-chk" onchange="updateChecklist()">
+                        <span>Confirm driver requirements</span>
+                    </label>
+                    <label class="checklist-label">
+                        <input type="checkbox" class="checklist-chk" onchange="updateChecklist()">
+                        <span>Save contact information</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section style="background: rgba(11, 15, 25, 0.5);">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <span class="section-tag">LOCAL CONNECTION</span>
+                    <h2>YOUR LOCAL CAR RENTAL CONNECTION</h2>
+                    <p>Rent a Car provides a direct point of contact for customers looking for vehicle rental information and rental inquiries in Sector 11 B, Aziz Nagar, Karachi, Pakistan.</p>
+                    
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <i class="fa-solid fa-headset"></i>
+                            <h4>Direct Rental Communication</h4>
+                            <p>Talk directly regarding availability and needs.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fa-solid fa-car"></i>
+                            <h4>Vehicle Category Selection</h4>
+                            <p>Find the right vehicle classification easily.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <h4>Rental Planning Support</h4>
+                            <p>Organize pickup and return dates seamlessly.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <h4>WhatsApp Contact</h4>
+                            <p>Instant messaging for fast communication.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image-box">
+                    <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=800&q=80" alt="Car Rental Connection">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Answers to common questions regarding car rental inquiries.</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item active">
+                    <div class="faq-question">
+                        <span>How can I inquire about renting a car?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Use the rental inquiry form or WhatsApp button to contact Rent a Car.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Where is Rent a Car located?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Sector 11 B, Aziz Nagar, Karachi, Pakistan.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I ask about vehicle availability?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes. Contact Rent a Car directly to confirm current availability.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I select pickup and return dates?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes. The website allows visitors to prepare a rental inquiry with preferred dates. Final availability must be confirmed directly.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I contact Rent a Car through WhatsApp?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, use the WhatsApp button.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Does submitting the form confirm my booking?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        No. The website creates a rental inquiry only. Booking confirmation and rental terms must be discussed directly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section — ABSOLUTELY ZERO IMAGES -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">GET IN TOUCH</span>
+                <h2>READY TO PLAN YOUR NEXT DRIVE?</h2>
+                <p>Reach out through phone, WhatsApp, or submit your rental inquiry below.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:03213759960">03213759960</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/923213759960" target="_blank">03213759960</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Location</h4>
+                            <p>Sector 11 B, Aziz Nagar, Karachi, Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a href="tel:+923213759960" class="btn btn-primary" style="flex: 1; justify-content: center;">
+                            <i class="fa-solid fa-phone"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/923213759960" target="_blank" class="btn btn-whatsapp" style="flex: 1; justify-content: center;">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-box">
+                    <h3 style="font-size: 1.35rem; margin-bottom: 1.5rem;">Send Rental Inquiry</h3>
+                    <form id="contactInquiryForm">
+                        <div class="form-group">
+                            <label for="contactName">Name</label>
+                            <input type="text" id="contactName" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactPhone">Phone</label>
+                            <input type="tel" id="contactPhone" placeholder="Your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactVehicleType">Vehicle Type</label>
+                            <select id="contactVehicleType">
+                                <option value="Economy">Economy</option>
+                                <option value="Sedan">Sedan</option>
+                                <option value="SUV">SUV</option>
+                                <option value="Hatchback">Hatchback</option>
+                                <option value="Executive">Executive</option>
+                                <option value="Family">Family</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div>
+                                <label for="contactPickup">Pickup Date</label>
+                                <input type="date" id="contactPickup" required>
+                            </div>
+                            <div>
+                                <label for="contactReturn">Return Date</label>
+                                <input type="date" id="contactReturn" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Message</label>
+                            <textarea id="contactMessage" placeholder="Additional details or questions..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Send Rental Inquiry
+                        </button>
+                        <div class="form-feedback" id="contactFormFeedback">
+                            Your rental inquiry has been prepared. Contact the dealership directly to confirm availability and rental terms. Connect instantly on <a href="https://wa.me/923213759960" target="_blank" style="color: #25d366; text-decoration: underline; font-weight: bold;">WhatsApp</a>.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo" style="margin-bottom: 1rem;">
+                        <i class="fa-solid fa-car-side"></i>
+                        RENT A CAR
+                    </a>
+                    <p>Explore vehicle categories and connect directly for rental inquiries in Aziz Nagar, Karachi.</p>
+                    <a href="#planner" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.6rem 1.2rem;">Start Rental Inquiry</a>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#cars">Cars</a>
+                        <a href="#options">Rental Options</a>
+                        <a href="#process">How It Works</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Rental Links</h3>
+                    <div class="footer-links">
+                        <a href="#cars">Find a Car</a>
+                        <a href="#planner">Rental Planner</a>
+                        <a href="#contact">Rental Inquiry</a>
+                        <a href="#options">Vehicle Categories</a>
+                        <a href="#checklistProgress">Rental Checklist</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <div class="footer-links">
+                        <a href="tel:03213759960">03213759960</a>
+                        <a href="https://wa.me/923213759960" target="_blank">WhatsApp</a>
+                        <span style="color: var(--text-muted); font-size: 0.9rem;">Sector 11 B, Aziz Nagar, Karachi, Pakistan</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Rent a Car. All rights reserved.</p>
+                <p>Sector 11 B, Aziz Nagar, Karachi, Pakistan</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Dynamic Current Year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Set default date values to today / tomorrow for convenience
+        const todayStr = new Date().toISOString().split('T')[0];
+        const tomorrow = new Date();
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        const tomorrowStr = tomorrow.toISOString().split('T')[0];
+
+        ['heroPickupDate', 'planPickupDate', 'contactPickup'].forEach(id => {
+            const el = document.getElementById(id);
+            if(el) el.value = todayStr;
+        });
+        ['heroReturnDate', 'planReturnDate', 'contactReturn'].forEach(id => {
+            const el = document.getElementById(id);
+            if(el) el.value = tomorrowStr;
+        });
+
+        // Navbar scroll effect & Back to top visibility
+        const navbar = document.getElementById('navbar');
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            if (window.scrollY > 400) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+
+            updateActiveNavOnScroll();
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Mobile Hamburger Menu
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('open');
+            const icon = hamburger.querySelector('i');
+            if (mobileMenu.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('open');
+                hamburger.querySelector('i').classList.remove('fa-xmark');
+                hamburger.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Active Navigation on Scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        function updateActiveNavOnScroll() {
+            let scrollPosition = window.scrollY + 200;
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                    mobileLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        // Hero Quick Planner WhatsApp Redirect
+        function submitHeroQuickPlanner() {
+            const vType = document.getElementById('heroVehicleType').value;
+            const pDate = document.getElementById('heroPickupDate').value;
+            const rDate = document.getElementById('heroReturnDate').value;
+            
+            if (rDate < pDate) {
+                alert("Return date cannot be before pickup date.");
+                return;
+            }
+
+            const msg = encodeURIComponent(`Hello, I would like to inquire about renting a ${vType} from ${pDate} to ${rDate}. Please share the available options and rental terms.`);
+            window.open(`https://wa.me/923213759960?text=${msg}`, '_blank');
+        }
+
+        // Vehicle Filtering & Search
+        const searchFilter = document.getElementById('searchFilter');
+        const categoryFilter = document.getElementById('categoryFilter');
+        const sortFilter = document.getElementById('sortFilter');
+        const vehicleGrid = document.getElementById('vehicleGrid');
+        const vehicleCards = vehicleGrid.querySelectorAll('.vehicle-card');
+
+        function filterVehicles() {
+            const query = searchFilter.value.toLowerCase();
+            const cat = categoryFilter.value;
+
+            vehicleCards.forEach(card => {
+                const name = card.getAttribute('data-name').toLowerCase();
+                const category = card.getAttribute('data-category');
+                const textContent = card.textContent.toLowerCase();
+
+                const matchesSearch = name.includes(query) || textContent.includes(query);
+                const matchesCategory = (cat === 'all' || category === cat);
+
+                if (matchesSearch && matchesCategory) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        searchFilter.addEventListener('input', filterVehicles);
+        categoryFilter.addEventListener('change', filterVehicles);
+
+        sortFilter.addEventListener('change', () => {
+            const cardsArr = Array.from(vehicleCards);
+            if (sortFilter.value === 'name') {
+                cardsArr.sort((a, b) => a.getAttribute('data-name').localeCompare(b.getAttribute('data-name')));
+            }
+            cardsArr.forEach(card => vehicleGrid.appendChild(card));
+        });
+
+        function resetVehicleFilters() {
+            searchFilter.value = '';
+            categoryFilter.value = 'all';
+            sortFilter.value = 'default';
+            filterVehicles();
+        }
+
+        function filterByCategory(catName) {
+            categoryFilter.value = catName;
+            filterVehicles();
+            document.getElementById('cars').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Vehicle Detail Modal
+        const vehicleModal = document.getElementById('vehicleModal');
+        const modalImg = document.getElementById('modalImg');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalCategory = document.getElementById('modalCategory');
+        const modalFeatures = document.getElementById('modalFeatures');
+        const modalWhatsAppBtn = document.getElementById('modalWhatsAppBtn');
+
+        function openVehicleModal(title, category, featuresText, imgSrc) {
+            modalTitle.textContent = title;
+            modalCategory.textContent = `Category: ${category}`;
+            modalImg.src = imgSrc;
+            
+            modalFeatures.innerHTML = '';
+            featuresText.split(' / ').forEach(feat => {
+                modalFeatures.innerHTML += `
+                    <div class="modal-feature-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>${feat}</span>
+                    </div>
+                `;
+            });
+
+            const waMsg = encodeURIComponent(`Hello, I would like to inquire about renting the ${title} (${category}). Please share available terms.`);
+            modalWhatsAppBtn.href = `https://wa.me/923213759960?text=${waMsg}`;
+
+            vehicleModal.classList.add('active');
+        }
+
+        function closeVehicleModal() {
+            vehicleModal.classList.remove('active');
+        }
+
+        vehicleModal.addEventListener('click', (e) => {
+            if (e.target === vehicleModal) closeVehicleModal();
+        });
+
+        // Rental Planner Form Handler
+        const rentalPlannerForm = document.getElementById('rentalPlannerForm');
+        const plannerFeedback = document.getElementById('plannerFeedback');
+        const plannerWhatsAppBtn = document.getElementById('plannerWhatsAppBtn');
+
+        rentalPlannerForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const pDate = document.getElementById('planPickupDate').value;
+            const rDate = document.getElementById('planReturnDate').value;
+
+            if (rDate < pDate) {
+                alert("Return date cannot be before pickup date.");
+                return;
+            }
+
+            const vType = document.getElementById('planVehicleType').value;
+            const trip = document.getElementById('planTripType').value;
+            const driver = document.getElementById('planDriverReq').value;
+
+            plannerFeedback.classList.add('success');
+
+            const msg = encodeURIComponent(`Hello, I would like to inquire about renting a ${vType} from ${pDate} to ${rDate}. Trip Type: ${trip}, Driver: ${driver}. Please share availability and terms.`);
+            plannerWhatsAppBtn.href = `https://wa.me/923213759960?text=${msg}`;
+        });
+
+        // Contact Section Form Handler
+        const contactInquiryForm = document.getElementById('contactInquiryForm');
+        const contactFormFeedback = document.getElementById('contactFormFeedback');
+
+        contactInquiryForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const pDate = document.getElementById('contactPickup').value;
+            const rDate = document.getElementById('contactReturn').value;
+
+            if (rDate < pDate) {
+                alert("Return date cannot be before pickup date.");
+                return;
+            }
+
+            contactFormFeedback.classList.add('success');
+            contactInquiryForm.reset();
+            setTimeout(() => {
+                contactFormFeedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        });
+
+        // Interactive Checklist
+        function updateChecklist() {
+            const chks = document.querySelectorAll('.checklist-chk');
+            const total = chks.length;
+            let checkedCount = 0;
+            chks.forEach(chk => {
+                if(chk.checked) checkedCount++;
+            });
+            const pct = (checkedCount / total) * 100;
+            document.getElementById('checklistProgress').style.width = pct + '%';
+        }
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const currentlyActive = document.querySelector('.faq-item.active');
+                if (currentlyActive && currentlyActive !== item) {
+                    currentlyActive.classList.remove('active');
+                }
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
